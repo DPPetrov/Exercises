@@ -5,6 +5,6 @@ public class ReverseArray {
         Scanner sc = new Scanner(System.in);
 
         int n = Integer.parseInt(sc.nextLine());
-
+        int[] array = new int[n];
     }
 }
