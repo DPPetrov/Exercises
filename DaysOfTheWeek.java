@@ -11,7 +11,7 @@ public class DaysOfTheWeek {
        if(n >= 1 && n <= 7){
            System.out.println(daysArr[n - 1]);
        }else{
-
+           System.out.println("Invalid day!");
        }
     }
 }
