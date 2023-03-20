@@ -23,6 +23,7 @@ public class EqualArrays {
                 break;
             }else{
 
+                sum += firstArr[i];
             }
         }
     }
