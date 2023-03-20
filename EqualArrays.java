@@ -14,11 +14,15 @@ public class EqualArrays {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
+        int sum = 0;
+
         for (int i = 0; i < firstArr.length; i++) {
 
             if (firstArr[i] != secondArr[i]){
                 System.out.printf("Arrays are not identical. Found difference at %d index.", i);
                 break;
+            }else{
+
             }
         }
     }
