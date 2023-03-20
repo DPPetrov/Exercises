@@ -14,8 +14,6 @@ public class ReverseStringArray {
             input[input.length - 1 - i] = temp;
         }
 
-        for (String s : input) {
-            System.out.print(s + " ");
-        }
+        System.out.println(String.join(" ", input));
     }
 }
