@@ -11,6 +11,7 @@ public class ReverseStringArray {
 
             String temp = input[i];
             input[i] = input[input.length - 1 - i];
+            input[input.length - 1 - i] = temp;
         }
     }
 }
