@@ -19,10 +19,10 @@ public class EqualArrays {
 
         for (int i = 0; i < firstArr.length; i++) {
 
-            if (firstArr[i] != secondArr[i]){
+            if (firstArr[i] != secondArr[i]) {
                 System.out.printf("Arrays are not identical. Found difference at %d index.", i);
                 break;
-            }else{
+            } else {
 
                 sum += firstArr[i];
 
@@ -30,11 +30,10 @@ public class EqualArrays {
         }
 
 
+        if (Arrays.equals(firstArr, secondArr)) {
 
-         if (Arrays.equals(firstArr, secondArr)){
-
-             System.out.printf("Arrays are identical. Sum: %d", sum);
-         }
+            System.out.printf("Arrays are identical. Sum: %d", sum);
+        }
 
 
     }
