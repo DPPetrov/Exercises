@@ -19,9 +19,9 @@ public class CondenseArrayToNums {
 
                 condensedArr[i] += numsArr[i] + numsArr[i + 1];
             }
-
+                numsArr = condensedArr;
         }
 
-        System.out.println(condensedArr[0]);
+        System.out.println(numsArr[0]);
     }
 }
