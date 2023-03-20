@@ -10,15 +10,8 @@ public class CondenseArrayToNums {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        int sum = 0;
 
-        int[] condensedArr = new int[numsArr.length -1];
+        int[] condensedArr = new int[numsArr.length - 1];
 
-        for (int i = 0; i < numsArr.length - 1; i++) {
-
-            condensedArr[i] += numsArr[i] + numsArr[i + 1];
-        }
-
-        System.out.println(sum);
     }
 }
