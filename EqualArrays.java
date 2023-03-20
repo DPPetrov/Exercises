@@ -25,14 +25,17 @@ public class EqualArrays {
             }else{
 
                 sum += firstArr[i];
-                areEqual = true;
+
             }
         }
 
-        if (areEqual){
 
-            System.out.printf("Arrays are identical. Sum: %d", sum);
-        }
+
+         if (Arrays.equals(firstArr, secondArr)){
+
+             System.out.printf("Arrays are identical. Sum: %d", sum);
+         }
+
 
     }
 }
