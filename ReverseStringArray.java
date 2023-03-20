@@ -7,11 +7,15 @@ public class ReverseStringArray {
 
         String[] input = sc.nextLine().split(" ");
 
-        for (int i = 0; i < input.length - 1; i++) {
+        for (int i = 0; i < (input.length - 1) / 2; i++) {
 
             String temp = input[i];
             input[i] = input[input.length - 1 - i];
             input[input.length - 1 - i] = temp;
+        }
+
+        for (String s : input) {
+            System.out.print(s + " ");
         }
     }
 }
