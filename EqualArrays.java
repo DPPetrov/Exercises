@@ -19,6 +19,11 @@ public class EqualArrays {
             if (firstArr[i] != secondArr[i]){
                 System.out.printf("Arrays are not identical. Found difference at %d index.", i);
                 break;
+            }else{
+                int sum = 0;
+                sum += firstArr[i];
+
+                System.out.printf("Arrays are identical. Sum: %d", sum);
             }
         }
     }
