@@ -10,7 +10,6 @@ public class ReverseStringArray {
         for (int i = 0; i < input.length - 1; i++) {
 
             String temp = input[i];
-            String newLetter = input[input.length - 1 - i];
 
         }
     }
