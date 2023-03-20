@@ -15,7 +15,7 @@ public class EqualArrays {
                 .toArray();
 
         int sum = 0;
-        boolean areEqual = false;
+
 
         for (int i = 0; i < firstArr.length; i++) {
 
