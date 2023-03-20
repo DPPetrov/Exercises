@@ -11,15 +11,14 @@ public class CondenseArrayToNums {
                 .toArray();
 
 
-        int[] condensedArr = new int[numsArr.length - 1];
-
         while (numsArr.length > 1) {
+            int[] condensed = new int[numsArr.length - 1];
+            for (int i = 0; i < condensed.length; i++) {
 
-            for (int i = 0; i < condensedArr.length; i++) {
-
-                condensedArr[i] += numsArr[i] + numsArr[i + 1];
+                condensed[i] += numsArr[i] + numsArr[i + 1];
             }
-            numsArr = condensedArr;
+
+            numsArr = condensed;
         }
 
         System.out.println(numsArr[0]);
