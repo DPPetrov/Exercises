@@ -10,6 +10,10 @@ public class CondenseArrayToNums {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
+        int sum = 0;
 
+        for (int i = 0; i < numsArr.length; i++) {
+
+        }
     }
 }
