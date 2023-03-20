@@ -12,8 +12,13 @@ public class CondenseArrayToNums {
 
         int sum = 0;
 
-        for (int i = 0; i < numsArr.length; i++) {
+        int[] condensedArr = new int[numsArr.length -1];
 
+        for (int i = 0; i < numsArr.length - 1; i++) {
+
+            sum += numsArr[i] + numsArr[i + 1];
         }
+
+        System.out.println(sum);
     }
 }
