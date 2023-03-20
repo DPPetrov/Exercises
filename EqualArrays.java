@@ -15,6 +15,7 @@ public class EqualArrays {
                 .toArray();
 
         int sum = 0;
+        boolean areEqual = false;
 
         for (int i = 0; i < firstArr.length; i++) {
 
@@ -24,7 +25,14 @@ public class EqualArrays {
             }else{
 
                 sum += firstArr[i];
+                areEqual = true;
             }
         }
+
+        if (areEqual){
+
+            System.out.printf("Arrays are identical. Sum: %d", sum);
+        }
+
     }
 }
