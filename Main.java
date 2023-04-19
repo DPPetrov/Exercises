@@ -7,10 +7,20 @@ public class Main {
 
         int input = Integer.parseInt(sc.nextLine());
 
-        while (n > 0) {
+
+        Car car = new Car();
 
 
 
+        while (input > 0) {
+
+            String[] n = sc.nextLine().split("\\s++");
+            car.setModel(n[0]);
+            car.setBrand(n[1]);
+            car.setHorsePower(Integer.parseInt(n[2]));
+            input--;
         }
+
+        System.out.printf("The car is: %s %s - %s HP.%n", car.getModel(), car.getBrand(), car.getHorsePower());
     }
 }
