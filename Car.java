@@ -16,9 +16,9 @@ public class Car {
         return horsePower;
     }
 
-    public void setModel(String model) {
+ public void setModel(String model){
         this.model = model;
-    }
+ }
 
     public void setBrand(String brand) {
         this.brand = brand;
