@@ -1,6 +1,6 @@
 public class Car {
 
-    public String model;
-    public String brand;
-    public int horsePower;
+    private String model;
+    private String brand;
+    private int horsePower;
 }
