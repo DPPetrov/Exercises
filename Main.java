@@ -1,12 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        Car car = new Car();
+        Scanner sc = new Scanner(System.in);
 
-        car.setModel("Chevrolet");
-        car.setBrand("Impala");
-        car.setHorsePower(390);
+        int input = Integer.parseInt(sc.nextLine());
 
-        System.out.println(String.format("The car is: %s %s - %d HP", car.getBrand(), car.getModel(), car.getHorsePower()));
+        while (n > 0) {
+
+
+
+        }
     }
 }
