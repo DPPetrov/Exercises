@@ -1,25 +1,28 @@
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class SumEven {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        int[] arr = Arrays.stream(sc.nextLine().split(" "))
-                .mapToInt(Integer::parseInt)
-                .toArray();
+        List<Integer> numbers = Arrays.stream(sc.nextLine().split(", "))
+                .map(Integer::parseInt)
+                .filter(n -> n % 2 == 0)
+                .toList();
 
-        int sum = 0;
+        System.out.println(numbers.stream()
 
-        for (int i = 0; i < arr.length; i++) {
+                .map(String::valueOf)
+                .collect(Collectors.joining(", ")));
 
-            if(arr[i] % 2 == 0){
+        System.out.println(numbers.stream()
 
-                sum += arr[i];
-            }
-        }
+                .sorted()
+                .map(String::valueOf)
+                .collect(Collectors.joining(", ")));
 
-        System.out.println(sum);
     }
 }
