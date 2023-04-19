@@ -3,7 +3,7 @@ public class Main {
 
         Car car = new Car();
 
-        car.setBrand("Chevrolet");
+        car.setModel("Chevrolet");
         car.setBrand("Impala");
         car.setHorsePower(390);
 
