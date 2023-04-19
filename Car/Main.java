@@ -1,3 +1,5 @@
+package Car;
+
 import java.util.Scanner;
 
 public class Main {
@@ -18,9 +20,11 @@ public class Main {
             car.setModel(n[0]);
             car.setBrand(n[1]);
             car.setHorsePower(Integer.parseInt(n[2]));
-            System.out.printf("\nThe car is: %s %s - %s HP.%n", car.getModel(), car.getBrand(), car.getHorsePower());
+
             input--;
         }
+
+        System.out.printf("\nThe car is: %s %s - %s HP.%n", car.getModel(), car.getBrand(), car.getHorsePower());
 
 
     }
